@@ -1,0 +1,297 @@
+#contenedor{
+    justify-content: left;
+    align-items: center;
+    padding: 15px 30px;
+}
+.cubo div{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #222;
+}
+.cubo .cara1{ transform: translateZ(60px);}
+.cubo .cara2{ transform: rotateY(90deg) translateZ(60px);}
+.cubo .cara3{ transform: rotateY(90deg) rotateX(90deg) translateZ(60px);}
+.cubo .cara4{ transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);}
+.cubo .cara5{ transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);}
+.cubo .cara6{ transform: rotateX(-90deg) translateZ(60px);}
+
+@-webkit-keyframes rotacubo {
+    0% {
+        -webkit-transform: rotateX(0deg);
+    }
+    100% {
+        -webkit-transform: rotateX(360deg);
+    }
+}
+
+.animacubo {
+    animation-name: rotacubo;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    transform-origin: 60px 60px 0;
+}
+
+#contenedor{
+    width: 120px;
+    height: 120px;
+    perspective: 1000px;
+}
+
+@keyframes rotacubo {
+    0% {
+        -webkit-transform: translateZ(0) rotateX(0) rotateY(0);
+    }
+    50% {
+        -webkit-transform: translateZ(-800px) rotateX(180deg) rotateY(180deg);
+    }
+    100% {
+        -webkit-transform: translateZ(0) rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.animacubo {
+    animation-name: rotacubo;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    transform-origin: 60px 60px 0;
+}
+h1{
+   padding: 15px 30px;
+    color: rgb(0, 0, 0);
+
+}
+body{
+    background-image: url(https://fondosmil.com/fondo/15482.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: #ffff;
+}
+div{
+    display: flex;
+    flex-direction: column;
+   justify-content: left;
+   align-items: center;
+
+}
+
+.btn-neon1{
+   
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+
+}
+.btn-neon1:hover{
+    background: #D2691E;
+    box-shadow: 0 0 10px #D2691E,
+     0 0 40px #D2691E, 0 0 80px #D2691E;
+     transition-delay: 1s;
+}
+.btn-neon1 span{
+    position: absolute;
+    display: block;
+
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#D2691E);
+}
+.btn-neon1:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+#span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#D2691E);
+}
+.btn-neon1:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#D2691E);
+}
+.btn-neon1:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#D2691E);
+}
+.btn-neon1:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+.btn-neon2{
+    
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btn-neon2:hover{
+    background: #D2691E;
+    box-shadow: 0 0 10px #D2691E,
+     0 0 40px #D2691E, 0 0 80px #D2691E;
+     transition-delay: 1s;
+}
+.btn-neon2:hover span{
+    position: absolute;
+    display: block;
+}
+#span5{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#D2691E);
+}
+.btn-neon2:hover #span5{
+    left: 100%;
+    transition: 1s;
+   
+}
+#span6{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#D2691E);
+}
+.btn-neon2:hover #span6{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span7{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#D2691E);
+}
+.btn-neon2:hover #span7{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span8{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#D2691E);
+}
+.btn-neon2:hover #span8{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+.btn-neon3{
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btn-neon3:hover{
+    background: #D2691E;
+    box-shadow: 0 0 10px #D2691E,
+     0 0 40px #D2691E, 0 0 80px #D2691E;
+     transition-delay: 1s;
+}
+.btn-neon3:hover span{
+    position: absolute;
+    display: block;
+}
+#span9{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#D2691E);
+}
+.btn-neon3:hover #span9{
+    left: 100%;
+    transition: 1s;
+}
+#span10{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#D2691E);
+}
+.btn-neon3:hover #span10{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span11{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#D2691E);
+}
+.btn-neon3:hover #span11{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span12{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#D2691E);
+}
+.btn-neon3:hover #span12{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
