@@ -1,0 +1,79 @@
+
+
+body{
+    background-color: rgb(234, 248, 35);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 210px;
+    height: 20px;
+    margin: 5px;
+}
+.actua{
+    height: 100px;
+    margin: 0;
+}
+.actua1{
+    height: 100px;
+    margin: 0;
+}
+
+table, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #ffff;
+}
+table{
+    width: 30%;
+}
+
+td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+}
+
+th {
+    padding: 10px;
+}
+
+th{
+    background-color: bisque;
+}
+.tabla4{
+    padding: 40px;
+    width: 200px;
+    border-bottom: 0px solid #ffff;
+}
+style{
+    font-size: 1em;
+    text-align: left;
+}
+
+
+.tabla{
+    
+    border-top: 0px solid #ffff;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    width: 10%;
+    height: 35px;
+    margin: 10px;
+}
+
+.result{
+    margin: 20px;
+}
+
+
+
+

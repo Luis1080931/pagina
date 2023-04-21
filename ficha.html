@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ficha Tecnica </title>
+    <link rel="stylesheet" href="css/ficha.css">
+    <script src="js/ficha.js"></script>
+</head>
+
+<body>
+
+    
+    <h1> Formato de ficha tecnica </h1>
+    <h3> Caracteristicas del producto </h3>
+    <input type="text" id="nom_product" placeholder="Nombre del producto">
+    <input type="text" id="li_product" placeholder="Linea de produccion">
+    <input type="text" id="ver_product" placeholder="Versiones anteriores del producto">
+    <input type="text" id="act_product" placeholder="Version actual del producto">
+    <input type="text" id="mod_product" placeholder="Modulo">
+
+    <h3> Descripción del producto </h3>
+    <input type="text" id="des_product" placeholder="Descripcion del peroducto">
+    <input type="text" id="obj_product" placeholder="Objetivo del producto">
+
+    <h3>Arquitectura </h3>
+    <input type="text" id="arq_product" placeholder="Descripcion del producto">
+
+    <h3>Requerimiento del producto</h3>
+    <h5>Requisitos del producto (servidor)</h5>
+    <input type="text" id="har_product" placeholder="Requerimientos fisicos minimos">
+    <input type="text" id="sof_product" placeholder="Requerimientos logicos necesarios">
+    <input type="text" id="otr_product" placeholder="Recomendaciones">
+
+    <h5>Requisitos del producto (cliente)</h5>
+    <input type="text" id="cli_product" placeholder="Requerimientos fisicos minimos">
+    <input type="text" id="log_product" placeholder="Requerimiento logico necesario">
+    <input type="text" id="apl_product" placeholder="Recomendaciones">
+
+    <h3>Requerimientos</h3>
+    <input type="text" id="fun_product" placeholder="Funciones del sistema">
+    <input type="text" id="adi_product" placeholder="Funcionalidades adicionales">
+    <input type="text" id="car_product" placeholder="Caracteristicas del producto">
+
+    <h3> Historial de modificaciones </h3>
+    <table>
+        <thead>
+            <tr>
+                <th> Version </th>
+                <th> Naturaleza del cambio </th>
+                <th> Fecha aprovación </th>
+                <th> Fecha validación </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input class="actua" type="text" id="version" placeholder="00">
+                </td>
+
+                <td>
+                    <input class="actua" type="text" id="actua" placeholder="Actualizacion documento">    
+                </td>
+
+                <td>
+                    <input class="actua" type="text" id="aprova" placeholder="25/05/2021"> 
+                </td> 
+
+                <td>
+                    <input class="actua" type="text" id="vali" placeholder="25/06/2021">    
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <input class="actua" type="text" id="versi" placeholder="01">
+                </td>
+                
+                <td>
+                    <input class="actua" type="text" id="actuali" placeholder="Actualizacion documento">
+                </td>
+                
+                <td>
+                    <input class="actua" type="text" id="aprovaci" placeholder="25/07/2021">
+                </td>
+                
+                <td>
+                    <input class="actua" type="text" id="validaci" placeholder="25/08/2021">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Firmas</h3>
+    <table>
+
+        <tr>
+            <th class="tabla2">Elaboró</th>
+            <th class="tabla2">Aprobó</th>
+            <th class="tabla2">Validó</th>
+        </tr>
+
+        <tr>
+            <td class="tabla4"></td>
+            <td class="tabla4"></td>
+            <td class="tabla4"></td>
+
+        <tr>
+            <td class="tabla">
+                <input class="actua1" type="text" id="firma1" placeholder="Firma">
+            </td>
+            <td class="tabla">
+                <input class="actua1" type="text" id="firma2" placeholder="Firma">
+            </td>
+            <td class="tabla">
+                <input class="actua1" type="text" id="firma3" placeholder="Firma">
+            </td>
+
+        <tr>
+            <td class="tabla3">
+                <input class="actua" type="text" id="fecha1" placeholder="Fecha">
+            </td>
+            <td class="tabla3">
+                <input class="actua" type="text" id="fecha2" placeholder="Fecha">
+            </td>
+            <td class="tabla3">
+                <input class="actua" type="text" id="fecha3" placeholder="Fecha">
+            </td>
+    </table>
+
+    <table class="result">
+        <thead>
+            <tr>
+                <th> Resultado </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p id="resproduct"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resli"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resver"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resact"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resmod"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resdes"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resobj"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resarq"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="reshar"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="ressof"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resotr"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="rescli"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="reslog"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resapl"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resfun"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="resadi"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="rescar"></p>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <table class="result">
+        <thead>
+            <tr>
+                <th> Versión </th>
+                <th> Naturaleza del cambio </th>
+                <th> Fecha aprovación </th>
+                <th> Fecha validación </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> 
+                    <p id="respu_ver"></p>
+                 </td>
+                 <td>
+                    <p id="respuac"></p>
+                 </td>
+                 <td>
+                    <p id="respuap"></p>
+                 </td>
+                 <td>
+                    <p id="respuva"></p>
+                 </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p id="respues"></p>
+                </td>
+                <td>
+                    <p id="respuesac"></p>
+                </td>
+                <td>
+                    <p id="respuesap"></p>
+                </td>
+                <td>
+                    <p id="respuesva"></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="result"> 
+        <thead>
+            <tr>
+                <th> Elaboró </th>
+                <th> Aprobó </th>
+                <th> Validó </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p id="resfi1"></p>
+                </td>
+                <td>
+                    <p id="resfi2"></p>
+                </td>
+                <td>
+                    <p id="resfi3"></p>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <p id="resfe1"></p>
+                </td>
+                <td>
+                    <p id="resfe2"></p>
+                </td>
+                <td>
+                    <p id="resfe3"></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button onclick="getficha()"> Enviar </button>
+
+
+
+
+</body>
+
+</html>
