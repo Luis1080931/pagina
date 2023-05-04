@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/factura.css">
+    <script src="js/factura.js"></script>
+</head>
+<body>
+
+    <a href="index.html" class="btn-neon">
+        <span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+        <span id="span4"></span>
+        Volver
+    </a>
+
+    <h1> Analy-coffe </h1>
+
+<div class="main-box">
+    <label> Nombre del subproyecto</label>
+    <input class="name-product" type="text" id="name-product" placeholder="Ingrese el nombre del subproyecto">
+    <div class="item">
+   
+    <input type="text" id="producto-1" placeholder="Nombre del producto">
+    <input type="number" id="cantidad" placeholder="Cantidad">
+    <input type="number" id="valor" placeholder="Valor unitario">
+    <p id="respuesta1"></p>
+
+    </div>
+    <div class="item">
+        <input type="text" id="producto-2" placeholder="Nombre del producto">
+        <input type="number" id="cantidad-2" placeholder="Cantidad">
+        <input type="number" id="valor-2" placeholder="Valor unitario">
+        
+        <p id="respuesta2"></p>
+        <hr class="separador">
+    </div>
+    <p id="respuesta3"></p>
+    </div>
+
+
+
+    <button class="boton" onclick="valor()"> Valor Total </button>
+    <button class="boton1" onclick="factura()"> Generar factura </button>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th> Nombre del producto </th>
+                <th> Cantidad del producto </th>
+                <th> Valor unitario </th>
+                <th> Valor total </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p id="name-product-1"></p>
+                </td>
+                <td>
+                    <p id="respuesta-cantidad"></p>
+                </td>
+                <td>
+                    <p id="respuesta-valor"></p>
+                </td>
+                <td>
+                    <p id="valor-total"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="name-product-2"></p>
+                </td>
+                <td>
+                    <p id="respuesta-cantidad-2"></p>
+                </td>
+                <td>
+                    <p id="respuesta-valor-2"></p>
+                </td>
+                <td>
+                    <p id="valor-total-2"></p>
+                </td>
+            </tr>
+            <tr>
+                <th class="total-table" colspan="3"> Total </th>
+                <td>
+                    <p id="total-3"></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+    
+</body>
+</html>
